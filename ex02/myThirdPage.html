@@ -1,1 +1,56 @@
-<h1>Hello WOrld! z4 WaRuD</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Two Divs</title>
+    <style>
+        body, html {
+            margin: 0;
+            padding: 0;
+            height: 100%;
+        }
+
+        .container {
+            display: flex; 
+            height: 100%; 
+        }
+
+        .div1, .div2 {
+            flex: 1; 
+            box-sizing: border-box;
+            padding: 20px; 
+        }
+
+        .div1 {
+            background-color: green; 
+        }
+
+        .div2 {
+            background-color: yellow; 
+        }
+
+        /* Responsive styles */
+        @media (max-width: 768px) {
+            .container {
+                flex-direction: column;
+            }
+
+            .div1, .div2 {
+                flex: none;
+                height: 50%; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="div1">
+
+        </div>
+        <div class="div2">
+
+        </div>
+    </div>
+</body>
+</html>
